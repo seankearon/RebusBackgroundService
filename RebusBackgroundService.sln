@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebusService", "RebusService\RebusService.csproj", "{48DEEE40-14DC-42E0-8342-38932A1D1A0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cli", "Cli\Cli.csproj", "{4FDB3B60-4913-49A6-BA29-BB05730AC042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{0AFA4782-154F-4ACB-BCFA-82B185FBEA2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48DEEE40-14DC-42E0-8342-38932A1D1A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DEEE40-14DC-42E0-8342-38932A1D1A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DEEE40-14DC-42E0-8342-38932A1D1A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DEEE40-14DC-42E0-8342-38932A1D1A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDB3B60-4913-49A6-BA29-BB05730AC042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDB3B60-4913-49A6-BA29-BB05730AC042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDB3B60-4913-49A6-BA29-BB05730AC042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDB3B60-4913-49A6-BA29-BB05730AC042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AFA4782-154F-4ACB-BCFA-82B185FBEA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AFA4782-154F-4ACB-BCFA-82B185FBEA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AFA4782-154F-4ACB-BCFA-82B185FBEA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AFA4782-154F-4ACB-BCFA-82B185FBEA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
