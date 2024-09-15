@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebusService", "RebusService\RebusService.csproj", "{48DEEE40-14DC-42E0-8342-38932A1D1A0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RebusWorkerService", "RebusWorkerService\RebusWorkerService.csproj", "{48DEEE40-14DC-42E0-8342-38932A1D1A0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cli", "Cli\Cli.csproj", "{4FDB3B60-4913-49A6-BA29-BB05730AC042}"
 EndProject

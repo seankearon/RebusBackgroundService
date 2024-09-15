@@ -11,11 +11,11 @@ using Rebus.Transport.FileSystem;
 RebusConfigurer ConfigureRebus(RebusConfigurer rebus) =>
     rebus.Logging(x => x.Console())
        .Transport(x => x.UseFileSystemAsOneWayClient("c:/rebus"))
-       .Routing(x => x.TypeBased().Map<SimpleMessage>("MainQueue"))
+       .Routing(x => x.TypeBased().Map<SimpleText>("MainQueue"))
        .Options(x => x.RetryStrategy(errorQueueName: "ErrorQueue"))
        .Options(x => x.EnableMessageAuditing(auditQueue: "AuditQueue"));
 
-Directory.CreateDirectory("c:/rebus/MainQueue"); // Rebus doesn't create the folder in in one-way mode.  
+Directory.CreateDirectory("c:/rebus/MainQueue"); // Rebus doesn't create the folder in one-way mode.  
 
 var services = new ServiceCollection();
 services.AddRebus((Func<RebusConfigurer,RebusConfigurer>)ConfigureRebus);
@@ -36,7 +36,7 @@ while (!string.IsNullOrEmpty(input))
         Console.WriteLine($"Sending {number} messages...");
         for (var i = 0; i < number; i++)
         {
-            var message = new SimpleMessage { Text = $"Test message {i + 1}" };
+            var message = new SimpleText { Message = $"Test message {i + 1}" };
             await bus.Send(message);
         }
         Console.WriteLine($"Sent {number} messages.");
@@ -44,9 +44,9 @@ while (!string.IsNullOrEmpty(input))
     }
     else
     {
-        var message = new SimpleMessage { Text = input };
+        var message = new SimpleText { Message = input };
         await bus.Send(message);
-        Console.WriteLine($"Message sent: {message.Text}");
+        Console.WriteLine($"Message sent: {message.Message}");
         input = Console.ReadLine();
     }
 }

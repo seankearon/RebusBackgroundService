@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Rebus.ServiceProvider" Version="10.1.2" />
+      <PackageReference Include="Rebus.ServiceProvider" Version="10.2.0" />
     </ItemGroup>
 
     <ItemGroup>
